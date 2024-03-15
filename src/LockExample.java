@@ -1,7 +1,7 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MyThread extends Thread {
+public class LockExample extends Thread {
     private int ticket = 0;
     static Lock lock = new ReentrantLock();
 
@@ -24,8 +24,8 @@ public class MyThread extends Thread {
     }
 
     public static void main(String[] args) {
-        MyThread t1 = new MyThread();
-        MyThread t2 = new MyThread();
+        LockExample t1 = new LockExample();
+        LockExample t2 = new LockExample();
 
         t1.setName("Window 1");
         t2.setName("Window 2");
