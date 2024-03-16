@@ -13,10 +13,10 @@ Race condition: when two or more threads access a shared resource and at least o
 ![Safety](https://github.com/jasplil/java-concurrency/assets/39994190/919d2f90-f485-4cc9-9784-4c562c7a190f)
 
 How to prevent race conditions:
-1. synchonized method
+
+**synchonized method**
 ```
 synchronized(Object) // Thread 1, Thread 2 (blocked)
-
 {
     // Critical section
 }
