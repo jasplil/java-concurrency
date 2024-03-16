@@ -1,3 +1,5 @@
+package basics;
+
 public class ThreadExample {
     public static class MyThread extends Thread {
         public void run() {

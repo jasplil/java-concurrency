@@ -1,3 +1,5 @@
+package basics;
+
 public class ThreadExample2 {
     /**
      * Implementing Runnable interface

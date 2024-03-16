@@ -1,3 +1,5 @@
+package basics;
+
 public class ThreadSafe2 {
     public class MyRunnable implements Runnable {
         private int ticket = 0;

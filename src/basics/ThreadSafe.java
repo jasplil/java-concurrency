@@ -1,3 +1,5 @@
+package basics;
+
 public class ThreadSafe {
     public static class MyThread extends Thread {
         static int ticket = 0; // 0-99

@@ -1,4 +1,4 @@
-/**
+package basics; /**
  * Using exiositng thread-safe classes to manage state
  */
 
