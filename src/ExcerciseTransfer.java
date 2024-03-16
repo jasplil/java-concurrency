@@ -12,7 +12,7 @@ public class ExcerciseTransfer {
             return count;
         }
 
-        public int sell(int amount) {
+        public synchronized int sell(int amount) {
             if (count >= amount) {
                 count -= amount;
                 return amount;
@@ -25,8 +25,9 @@ public class ExcerciseTransfer {
     public void main(String[] args) {
         TicketWindow ticketWindow = new TicketWindow(10000);
         List<Integer> sold = new Vector<>();
-        List<Thread> threadList = new ArrayList<>();
 
+        // critical section
+        List<Thread> threadList = new ArrayList<>();
        for (int i = 0; i < 2000; i++) {
            Thread thread = new Thread(() -> {
                int count = ticketWindow.sell(100);
