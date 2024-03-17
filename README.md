@@ -66,3 +66,7 @@ LeetCode 1226. The Dining Philosophers
 - It can be interrupted, unlike synchronized method
 - Can be used as a fair lock
 - Can be used to try to acquire a lock
+### Volatile
+- variable is not cached in the thread's local memory
+### Semaphore
+- A semaphore is a counter that is used to control access to a shared resource.
