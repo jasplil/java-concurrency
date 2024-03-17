@@ -1,6 +1,6 @@
 package thread_safety;
 
-public class basicSyn {
+public class BasicSyn {
     static int count = 0;
 
     static class Room {
